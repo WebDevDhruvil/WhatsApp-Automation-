@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d10">
+  <title>WA Auto — AI-Powered WhatsApp Automation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <div class="mobile-backdrop" id="backdrop"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><span class="brand-mark">WA</span><span>WA Auto</span></div>
+    <button class="workspace" id="workspaceBtn"><span><b>Acme Workspace</b><small>Business workspace</small></span><span>⌄</span></button>
+    <nav class="nav" aria-label="Main navigation">
+      <button class="nav-item active" data-screen="overview"><span>⌂</span>Overview</button>
+      <button class="nav-item" data-screen="inbox"><span>◉</span>Inbox <em>8</em></button>
+      <button class="nav-item" data-screen="agent"><span>✦</span>AI Agent</button>
+      <button class="nav-item" data-screen="automations"><span>⌁</span>Automations</button>
+      <button class="nav-item" data-screen="contacts"><span>♙</span>Contacts</button>
+      <button class="nav-item" data-screen="knowledge"><span>▤</span>Knowledge Base</button>
+      <button class="nav-item" data-screen="analytics"><span>◌</span>Analytics</button>
+    </nav>
+    <div class="sidebar-bottom">
+      <button class="nav-item" data-screen="settings"><span>⚙</span>Settings</button>
+      <button class="nav-item" id="helpBtn"><span>?</span>Help</button>
+      <div class="profile"><div class="avatar">DR</div><div><b>Dhruvil</b><small>Admin</small></div><span>•••</span></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="breadcrumbs"><span>Workspace</span><b>/</b><strong id="pageTitle">Overview</strong></div>
+      <div class="top-actions">
+        <button class="icon-btn" id="notifBtn" aria-label="Notifications">♧<i></i></button>
+        <button class="help-pill" id="topHelp">?</button>
+        <div class="avatar small">DR</div>
+      </div>
+    </header>
+    <section class="content" id="content"></section>
+  </main>
+</div>
+<div id="modalRoot"></div>
+<div class="toast-wrap" id="toastWrap"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
